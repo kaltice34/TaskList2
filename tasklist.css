@@ -1,0 +1,201 @@
+* {
+    font-family: 'Bangers';
+    color: #b2ebf2;
+}
+
+body {
+    background-color:#0f3057;
+    text-align: center;
+    margin: 0 .5rem;
+}
+
+h1, .item {
+    font-size: 5rem;
+    color: #b2ebf2;
+}
+
+button {
+    background-color: #008891;
+    margin: 1rem 1rem;
+    padding: 1rem 2.5rem;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+#list {
+    min-height: 25rem;
+    max-width: 80%;
+    margin: .25rem auto;
+}
+
+#txtBox {
+    background-color: #008891;
+    border: none;
+    width: 18rem;
+    height: 2.5rem;
+    font-size: 1.75rem;
+    padding-left: 1rem;
+    
+}
+
+.item {
+    font-size: 3rem;
+    margin: .25rem auto;
+    overflow-wrap: break-word;
+}
+
+.deleteItem {
+    float: right;
+    padding: 0 1rem;
+}
+
+.deleteItem:hover, .deleteItem:focus {
+    color: red;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 850px) {
+
+    #list {
+        max-width: 20rem;
+        min-height: 10rem;
+    }
+
+    .item {
+        margin: .5rem auto;
+    }
+}
+
+@media only screen and (max-width: 335px) {
+    * {
+        padding: 0;
+        margin: 0;
+        max-width: 335px;
+    }
+    
+    body {
+        max-width: 335px;
+    }
+
+    h1, .item, .deleteItem {
+        font-size: 3rem;
+    }
+
+    .item {
+        max-width: 14rem;
+        margin: 2rem auto;
+        
+    }
+
+    #list {
+        min-height: 15rem;
+    }
+    
+    #txtBox {
+        width: 15rem;
+        height: 3rem;
+    }
+
+    /* button {
+        margin: 0;
+        padding: 1rem 2.5rem;;
+        
+    } */
+}
+
+@media only screen and (max-width: 270px) {
+    #txtBox {
+        height: 2.5rem;
+        width: 12rem;
+    }
+}
+
+@media only screen and (max-width: 240px) {
+    #txtBox {
+        width: 10rem;
+    }
+}
+
+
+@media only screen and (max-width: 210px) {
+    #txtBox {
+        width: 8rem;
+    }
+}
+
+@media only screen and (max-width: 150px) {
+    body {
+        margin: 0;
+        padding: 0;
+        font-size: 12px;
+        
+    }
+    #list {
+        min-height: 8rem;
+        max-width: 6rem; 
+    }
+
+    .item {
+        margin: .5rem auto;
+    }
+
+    #txtBox {
+        width: 5rem;
+        margin: .5rem auto;
+    }
+
+    button {
+        font-size: 1.75rem;
+        padding: .5rem 2rem;
+        margin: 1rem auto;
+    }
+
+    #clearButton {
+        margin: 0 auto;
+        padding: .5rem 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 110px) {
+    #clearButton {
+        font-size: 1rem;
+        padding: .25rem 1rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: .25rem 1rem;
+    }
+
+    #txtBox {
+        height: 2rem;
+    }
+}
+
+@media only screen and (max-width: 50px) {
+    h1 {
+        font-size: 1.25rem;
+    }
+    
+    #txtBox {
+        font-size: .5rem;
+        width: 1.75rem;
+        height: 1.25rem;
+    }
+
+    #list {
+        min-height: 3rem;
+    }
+
+    .item {
+        font-size: 1rem;
+    }
+
+    button {
+        padding: .25rem .25rem;
+    }
+
+    #clearButton {
+        padding: .25rem .25rem;
+    }
+}
